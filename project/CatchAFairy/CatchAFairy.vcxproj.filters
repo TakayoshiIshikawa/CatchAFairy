@@ -1,0 +1,697 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="CatchAFairy">
+      <UniqueIdentifier>{41b70094-5031-4f91-a566-b9e4c1fc7f05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ishikawa">
+      <UniqueIdentifier>{48c7f257-320d-408f-a5ae-f95ada6df035}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ishikawa\Window">
+      <UniqueIdentifier>{56db5d3f-a580-4b58-8f94-c655dd76da44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ishikawa\Common">
+      <UniqueIdentifier>{45e5b18b-1719-460e-bd83-f73117940bdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ishikawa\Window\DependentResource">
+      <UniqueIdentifier>{570a1412-0c4c-4f93-bee3-f5e862fdf075}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ishikawa\Common\PatternBase">
+      <UniqueIdentifier>{3bf39745-f3c3-4f58-939e-8b77d7a2178c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ishikawa\Common\Exception">
+      <UniqueIdentifier>{b9c04e35-9a7e-4c5a-8cda-6729aa55e1a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ishikawa\DirectX">
+      <UniqueIdentifier>{e28a97ad-b4ea-4180-b124-2dac4d269fea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ishikawa\DirectX\Texture">
+      <UniqueIdentifier>{cdb55654-3027-4a12-8f71-ce847e18fcea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ishikawa\DirectX\Device">
+      <UniqueIdentifier>{3e8dcdec-c154-4faf-be67-f30e27b685fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ishikawa\DirectX\Device\DependentResource">
+      <UniqueIdentifier>{9e9f064c-751d-408f-8f4d-8b2b1f8b9170}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CatchAFairy\Scene">
+      <UniqueIdentifier>{73d4045b-198d-4ff3-9ffb-d781de64a193}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CatchAFairy\Shader">
+      <UniqueIdentifier>{f9c2bc11-205e-443f-a764-c676cc2a8ebe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CatchAFairy\Shader\OutputScreenShader">
+      <UniqueIdentifier>{d50bf92e-0dcf-49a4-b0ec-79821932661a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CatchAFairy\Shader\User">
+      <UniqueIdentifier>{c5ea17af-46c1-4b0a-995c-955d23cc96a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ishikawa\Math">
+      <UniqueIdentifier>{6cc5fc62-4c66-4421-9e4c-6043b99e770c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CatchAFairy\Shader\LogoShader">
+      <UniqueIdentifier>{cf719575-cd53-4dfe-af9f-a5676f228ec8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CatchAFairy\Shader\TitleOutputShader">
+      <UniqueIdentifier>{94f103f1-dd41-4a98-ab29-e151760145f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ishikawa\Input">
+      <UniqueIdentifier>{c5b7a847-c0b9-4ab2-86c9-b606e82cf926}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CatchAFairy\Object">
+      <UniqueIdentifier>{864bce2d-e33d-4105-9de7-7f1e5cff97a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CatchAFairy\Shader\PlayCameraEyeShader">
+      <UniqueIdentifier>{0a51a4e7-005d-4af3-8806-ff99814b56ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CatchAFairy\Object\PlayScene">
+      <UniqueIdentifier>{dea3bcea-4635-4fed-8501-776d8be082ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ishikawa\Model">
+      <UniqueIdentifier>{4b859365-3342-4ae6-832e-f4cb3698b7d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CatchAFairy\Shader\DirectionalLightShader">
+      <UniqueIdentifier>{a298eb5c-2345-46da-8fe2-dcca15f81e36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CatchAFairy\Shader\CameraEyeShadowShader">
+      <UniqueIdentifier>{fb078d64-7ba6-4064-a55b-ae5224b41573}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CatchAFairy\Shader\CameraEyeReflectionLightShader">
+      <UniqueIdentifier>{74f82021-fe54-402c-83b8-b1be65ee4c5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CatchAFairy\Shader\CameraEyePointLightShader">
+      <UniqueIdentifier>{d851d6b5-a79c-4e23-8fd5-0987a2df9c1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ishikawa\Game">
+      <UniqueIdentifier>{7197463b-7a3c-4d92-a324-2865115f30f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ishikawa\CriAdx2Le">
+      <UniqueIdentifier>{387f23c0-fa7a-4584-a541-c868a00f4841}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CatchAFairy\Data">
+      <UniqueIdentifier>{6bfa5cd4-38bd-474b-a4ff-73b4b9ecc1de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CatchAFairy\Shader\PlayGUIShader">
+      <UniqueIdentifier>{a68c9041-e04f-4e88-836b-43f87901aec2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CatchAFairy\Object\PlayScene\GUI">
+      <UniqueIdentifier>{550aeb3a-1a72-4e6a-b405-622e7a3b0db1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AllUse.h" />
+    <ClInclude Include="WinMain.h" />
+    <ClInclude Include="Ishikawa\Window\ITWindow.h">
+      <Filter>Ishikawa\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\Window\ITWindowClass.h">
+      <Filter>Ishikawa\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\Window\ITWindowInterfase.h">
+      <Filter>Ishikawa\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\Window\ITWindowListEdge.h">
+      <Filter>Ishikawa\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\Window\DependentResource\ITWindowDependentResourceBase.h">
+      <Filter>Ishikawa\Window\DependentResource</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\Window\DependentResource\ITWindowDependentResourceInterface.h">
+      <Filter>Ishikawa\Window\DependentResource</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\Window\DependentResource\ITWindowDependentResourceListEdge.h">
+      <Filter>Ishikawa\Window\DependentResource</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\Common\PatternBase\SingletonBase.h">
+      <Filter>Ishikawa\Common\PatternBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\Common\PatternBase\SingletonManager.h">
+      <Filter>Ishikawa\Common\PatternBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\Common\Exception\ITExceptions.h">
+      <Filter>Ishikawa\Common\Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\Common\SafePointer.h">
+      <Filter>Ishikawa\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\Window\ITWindowManager.h">
+      <Filter>Ishikawa\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\DirectX\ITSwapChain.h">
+      <Filter>Ishikawa\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Game.h">
+      <Filter>CatchAFairy</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\Common\DebugLog.h">
+      <Filter>Ishikawa\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\DirectX\Device\ITDevice.h">
+      <Filter>Ishikawa\DirectX\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\DirectX\Device\DependentResource\ITDeviceDependentResourceBase.h">
+      <Filter>Ishikawa\DirectX\Device\DependentResource</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\DirectX\Device\DependentResource\ITDeviceDependentResourceInterface.h">
+      <Filter>Ishikawa\DirectX\Device\DependentResource</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\DirectX\Device\DependentResource\ITDeviceDependentResourceListEdge.h">
+      <Filter>Ishikawa\DirectX\Device\DependentResource</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\DirectX\Texture\ITTexture2D.h">
+      <Filter>Ishikawa\DirectX\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\DirectX\Texture\ITTextureData.h">
+      <Filter>Ishikawa\DirectX\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Scene\SceneInterface.h">
+      <Filter>CatchAFairy\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Scene\SceneLogo.h">
+      <Filter>CatchAFairy\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Scene\SceneManager.h">
+      <Filter>CatchAFairy\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Scene\SceneTitle.h">
+      <Filter>CatchAFairy\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Scene\SceneListEdge.h">
+      <Filter>CatchAFairy\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Scene\SceneBase.h">
+      <Filter>CatchAFairy\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Shader\User\OutputScreenShaderUser.h">
+      <Filter>CatchAFairy\Shader\User</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Shader\User\ShaderUserBase.h">
+      <Filter>CatchAFairy\Shader\User</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Shader\User\ShaderVertexTopology.h">
+      <Filter>CatchAFairy\Shader\User</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\Math\ITFloatN.h">
+      <Filter>Ishikawa\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\DirectX\ITViewport.h">
+      <Filter>Ishikawa\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Shader\User\LogoShaderUser.h">
+      <Filter>CatchAFairy\Shader\User</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\DirectX\Texture\ITFileTexture.h">
+      <Filter>Ishikawa\DirectX\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\DirectX\Texture\ITFileTextureLoader.h">
+      <Filter>Ishikawa\DirectX\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\Math\ITMatrix.h">
+      <Filter>Ishikawa\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Shader\User\TitleOutputShaderUser.h">
+      <Filter>CatchAFairy\Shader\User</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\Input\ITKeyboard.h">
+      <Filter>Ishikawa\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Scene\ScenePlay.h">
+      <Filter>CatchAFairy\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Shader\User\PlayCameraEyeFirstShaderUser.h">
+      <Filter>CatchAFairy\Shader\User</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Shader\User\PlayCameraEyeLastShaderUser.h">
+      <Filter>CatchAFairy\Shader\User</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Object\RenderObjectInterface.h">
+      <Filter>CatchAFairy\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Object\CameraObjectInterface.h">
+      <Filter>CatchAFairy\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Object\PlayScene\PlayCamera.h">
+      <Filter>CatchAFairy\Object\PlayScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\Model\ITObjectLoader.h">
+      <Filter>Ishikawa\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Object\PlayScene\Player.h">
+      <Filter>CatchAFairy\Object\PlayScene</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Object\PlayScene\Ground.h">
+      <Filter>CatchAFairy\Object\PlayScene</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Object\UpdateObjectInterface.h">
+      <Filter>CatchAFairy\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Object\PlayScene\DirectionalLight.h">
+      <Filter>CatchAFairy\Object\PlayScene</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Shader\User\DirectionalLightShaderUser.h">
+      <Filter>CatchAFairy\Shader\User</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Shader\User\CameraEyeShadowShaderUser.h">
+      <Filter>CatchAFairy\Shader\User</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Object\PlayScene\Trees.h">
+      <Filter>CatchAFairy\Object\PlayScene</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Object\RenderSameObjectInterface.h">
+      <Filter>CatchAFairy\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\Common\SystemFunctions.h">
+      <Filter>Ishikawa\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Shader\User\CameraEyeReflectionLightShaderUser.h">
+      <Filter>CatchAFairy\Shader\User</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Object\PlayScene\PointLight.h">
+      <Filter>CatchAFairy\Object\PlayScene</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Shader\User\CameraEyePointLightShaderUser.h">
+      <Filter>CatchAFairy\Shader\User</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\Common\Timer.h">
+      <Filter>Ishikawa\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Object\PointLightObjectInterface.h">
+      <Filter>CatchAFairy\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Object\PlayScene\ManaLight.h">
+      <Filter>CatchAFairy\Object\PlayScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\Common\Random.h">
+      <Filter>Ishikawa\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\Common\Xorshift.h">
+      <Filter>Ishikawa\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\Common\InterfaceRandom.h">
+      <Filter>Ishikawa\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\Math\ITMathFunctions.h">
+      <Filter>Ishikawa\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\Math\ITCollision.h">
+      <Filter>Ishikawa\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\Game\ITGameUseDirectXBase.h">
+      <Filter>Ishikawa\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\CriAdx2Le\ITCriAdx2Le.h">
+      <Filter>Ishikawa\CriAdx2Le</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Data\TreesOffset.h">
+      <Filter>CatchAFairy\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Shader\User\PlayGUIShaderUser.h">
+      <Filter>CatchAFairy\Shader\User</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Data\GUIVerticesSetting.h">
+      <Filter>CatchAFairy\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Object\PlayScene\GUI\FairyPositionView.h">
+      <Filter>CatchAFairy\Object\PlayScene\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Object\PlayScene\GUI\GUIManager.h">
+      <Filter>CatchAFairy\Object\PlayScene\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Object\PlayScene\GUI\GUIObjectInterface.h">
+      <Filter>CatchAFairy\Object\PlayScene\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Object\PlayScene\GUI\TimeView.h">
+      <Filter>CatchAFairy\Object\PlayScene\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Object\PlayScene\GUI\OperationMethodView.h">
+      <Filter>CatchAFairy\Object\PlayScene\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\DirectX\Texture\ITRenderTargetInterface.h">
+      <Filter>Ishikawa\DirectX\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\DirectX\Texture\ITShaderResourceInterface.h">
+      <Filter>Ishikawa\DirectX\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\DirectX\Texture\ITDepthStencilInterface.h">
+      <Filter>Ishikawa\DirectX\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\DirectX\Texture\ITTexture2DInterface.h">
+      <Filter>Ishikawa\DirectX\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Object\PlayScene\EnemyFairies.h">
+      <Filter>CatchAFairy\Object\PlayScene</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Data\PointLightsSetting.h">
+      <Filter>CatchAFairy\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Ishikawa\Math\ITCollisionShapes.h">
+      <Filter>Ishikawa\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Object\PlayScene\GUI\Numbers.h">
+      <Filter>CatchAFairy\Object\PlayScene\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Object\PlayScene\EnemyFairyConstance.h">
+      <Filter>CatchAFairy\Object\PlayScene</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Object\PlayScene\EnemyFairyController.h">
+      <Filter>CatchAFairy\Object\PlayScene</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Data\EnemyFairyType.h">
+      <Filter>CatchAFairy\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="CatchAFairy\Scene\SceneResult.h">
+      <Filter>CatchAFairy\Scene</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WinMain.cpp" />
+    <ClCompile Include="Ishikawa\Window\ITWindow.cpp">
+      <Filter>Ishikawa\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Ishikawa\Window\ITWindowClass.cpp">
+      <Filter>Ishikawa\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Ishikawa\Window\ITWindowListEdge.cpp">
+      <Filter>Ishikawa\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Ishikawa\Window\DependentResource\ITWindowDependentResourceBase.cpp">
+      <Filter>Ishikawa\Window\DependentResource</Filter>
+    </ClCompile>
+    <ClCompile Include="Ishikawa\Window\DependentResource\ITWindowDependentResourceListEdge.cpp">
+      <Filter>Ishikawa\Window\DependentResource</Filter>
+    </ClCompile>
+    <ClCompile Include="Ishikawa\Common\PatternBase\SingletonBase.cpp">
+      <Filter>Ishikawa\Common\PatternBase</Filter>
+    </ClCompile>
+    <ClCompile Include="Ishikawa\Common\PatternBase\SingletonManager.cpp">
+      <Filter>Ishikawa\Common\PatternBase</Filter>
+    </ClCompile>
+    <ClCompile Include="Ishikawa\Common\Exception\ITExceptions.cpp">
+      <Filter>Ishikawa\Common\Exception</Filter>
+    </ClCompile>
+    <ClCompile Include="Ishikawa\Window\ITWindowManager.cpp">
+      <Filter>Ishikawa\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Ishikawa\DirectX\ITSwapChain.cpp">
+      <Filter>Ishikawa\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Game.cpp">
+      <Filter>CatchAFairy</Filter>
+    </ClCompile>
+    <ClCompile Include="Ishikawa\Common\DebugLog.cpp">
+      <Filter>Ishikawa\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Ishikawa\DirectX\Device\ITDevice.cpp">
+      <Filter>Ishikawa\DirectX\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Ishikawa\DirectX\Device\DependentResource\ITDeviceDependentResourceBase.cpp">
+      <Filter>Ishikawa\DirectX\Device\DependentResource</Filter>
+    </ClCompile>
+    <ClCompile Include="Ishikawa\DirectX\Device\DependentResource\ITDeviceDependentResourceListEdge.cpp">
+      <Filter>Ishikawa\DirectX\Device\DependentResource</Filter>
+    </ClCompile>
+    <ClCompile Include="Ishikawa\DirectX\Texture\ITTexture2D.cpp">
+      <Filter>Ishikawa\DirectX\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Ishikawa\DirectX\Texture\ITTextureData.cpp">
+      <Filter>Ishikawa\DirectX\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Scene\SceneLogo.cpp">
+      <Filter>CatchAFairy\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Scene\SceneManager.cpp">
+      <Filter>CatchAFairy\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Scene\SceneTitle.cpp">
+      <Filter>CatchAFairy\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Scene\SceneListEdge.cpp">
+      <Filter>CatchAFairy\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Scene\SceneBase.cpp">
+      <Filter>CatchAFairy\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Shader\User\OutputScreenShaderUser.cpp">
+      <Filter>CatchAFairy\Shader\User</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Shader\User\ShaderUserBase.cpp">
+      <Filter>CatchAFairy\Shader\User</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Shader\User\ShaderVertexTopology.cpp">
+      <Filter>CatchAFairy\Shader\User</Filter>
+    </ClCompile>
+    <ClCompile Include="Ishikawa\DirectX\ITViewport.cpp">
+      <Filter>Ishikawa\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Shader\User\LogoShaderUser.cpp">
+      <Filter>CatchAFairy\Shader\User</Filter>
+    </ClCompile>
+    <ClCompile Include="Ishikawa\DirectX\Texture\ITFileTexture.cpp">
+      <Filter>Ishikawa\DirectX\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Ishikawa\DirectX\Texture\ITFileTextureLoader.cpp">
+      <Filter>Ishikawa\DirectX\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Ishikawa\Math\ITFloatN.cpp">
+      <Filter>Ishikawa\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Ishikawa\Math\ITMatrix.cpp">
+      <Filter>Ishikawa\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Shader\User\TitleOutputShaderUser.cpp">
+      <Filter>CatchAFairy\Shader\User</Filter>
+    </ClCompile>
+    <ClCompile Include="Ishikawa\Input\ITKeyboard.cpp">
+      <Filter>Ishikawa\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Scene\ScenePlay.cpp">
+      <Filter>CatchAFairy\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Shader\User\PlayCameraEyeFirstShaderUser.cpp">
+      <Filter>CatchAFairy\Shader\User</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Shader\User\PlayCameraEyeLastShaderUser.cpp">
+      <Filter>CatchAFairy\Shader\User</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Object\PlayScene\PlayCamera.cpp">
+      <Filter>CatchAFairy\Object\PlayScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Ishikawa\Model\ITObjectLoader.cpp">
+      <Filter>Ishikawa\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Object\PlayScene\Player.cpp">
+      <Filter>CatchAFairy\Object\PlayScene</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Object\PlayScene\Ground.cpp">
+      <Filter>CatchAFairy\Object\PlayScene</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Object\PlayScene\DirectionalLight.cpp">
+      <Filter>CatchAFairy\Object\PlayScene</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Shader\User\DirectionalLightShaderUser.cpp">
+      <Filter>CatchAFairy\Shader\User</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Shader\User\CameraEyeShadowShaderUser.cpp">
+      <Filter>CatchAFairy\Shader\User</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Object\PlayScene\Trees.cpp">
+      <Filter>CatchAFairy\Object\PlayScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Ishikawa\Common\SystemFunctions.cpp">
+      <Filter>Ishikawa\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Shader\User\CameraEyeReflectionLightShaderUser.cpp">
+      <Filter>CatchAFairy\Shader\User</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Object\PlayScene\PointLight.cpp">
+      <Filter>CatchAFairy\Object\PlayScene</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Shader\User\CameraEyePointLightShaderUser.cpp">
+      <Filter>CatchAFairy\Shader\User</Filter>
+    </ClCompile>
+    <ClCompile Include="Ishikawa\Common\Timer.cpp">
+      <Filter>Ishikawa\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Object\PlayScene\ManaLight.cpp">
+      <Filter>CatchAFairy\Object\PlayScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Ishikawa\Common\Random.cpp">
+      <Filter>Ishikawa\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Ishikawa\Common\Xorshift.cpp">
+      <Filter>Ishikawa\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Ishikawa\Math\ITMathFunctions.cpp">
+      <Filter>Ishikawa\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Ishikawa\Math\ITCollision.cpp">
+      <Filter>Ishikawa\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Ishikawa\Game\ITGameUseDirectXBase.cpp">
+      <Filter>Ishikawa\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Ishikawa\CriAdx2Le\ITCriAdx2Le.cpp">
+      <Filter>Ishikawa\CriAdx2Le</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Data\TreesOffset.cpp">
+      <Filter>CatchAFairy\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Shader\User\PlayGUIShaderUser.cpp">
+      <Filter>CatchAFairy\Shader\User</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Object\PlayScene\GUI\FairyPositionView.cpp">
+      <Filter>CatchAFairy\Object\PlayScene\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Object\PlayScene\GUI\GUIManager.cpp">
+      <Filter>CatchAFairy\Object\PlayScene\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Object\PlayScene\GUI\TimeView.cpp">
+      <Filter>CatchAFairy\Object\PlayScene\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Object\PlayScene\GUI\OperationMethodView.cpp">
+      <Filter>CatchAFairy\Object\PlayScene\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Object\PlayScene\EnemyFairies.cpp">
+      <Filter>CatchAFairy\Object\PlayScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Ishikawa\Math\ITCollisionShapes.cpp">
+      <Filter>Ishikawa\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Object\PlayScene\GUI\Numbers.cpp">
+      <Filter>CatchAFairy\Object\PlayScene\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Object\PlayScene\EnemyFairyConstance.cpp">
+      <Filter>CatchAFairy\Object\PlayScene</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Object\PlayScene\EnemyFairyController.cpp">
+      <Filter>CatchAFairy\Object\PlayScene</Filter>
+    </ClCompile>
+    <ClCompile Include="CatchAFairy\Scene\SceneResult.cpp">
+      <Filter>CatchAFairy\Scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="CatchAFairy\Shader\OutputScreenShader\OutputScreenPixelShader.hlsl">
+      <Filter>CatchAFairy\Shader\OutputScreenShader</Filter>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\OutputScreenShader\OutputScreenVertexShader.hlsl">
+      <Filter>CatchAFairy\Shader\OutputScreenShader</Filter>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\OutputScreenShader\OutputScreenGeometryShader.hlsl">
+      <Filter>CatchAFairy\Shader\OutputScreenShader</Filter>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\LogoShader\LogoGeometryShader.hlsl">
+      <Filter>CatchAFairy\Shader\LogoShader</Filter>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\LogoShader\LogoPixelShader.hlsl">
+      <Filter>CatchAFairy\Shader\LogoShader</Filter>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\LogoShader\LogoVertexShader.hlsl">
+      <Filter>CatchAFairy\Shader\LogoShader</Filter>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\TitleOutputShader\TitleOutputGeometryShader.hlsl">
+      <Filter>CatchAFairy\Shader\TitleOutputShader</Filter>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\TitleOutputShader\TitleOutputPixelShader.hlsl">
+      <Filter>CatchAFairy\Shader\TitleOutputShader</Filter>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\TitleOutputShader\TitleOutputVertexShader.hlsl">
+      <Filter>CatchAFairy\Shader\TitleOutputShader</Filter>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\PlayCameraEyeShader\PlayCameraEyeFirstGeometryShader.hlsl">
+      <Filter>CatchAFairy\Shader\PlayCameraEyeShader</Filter>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\PlayCameraEyeShader\PlayCameraEyeFirstPixelShader.hlsl">
+      <Filter>CatchAFairy\Shader\PlayCameraEyeShader</Filter>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\PlayCameraEyeShader\PlayCameraEyeFirstVertexShader.hlsl">
+      <Filter>CatchAFairy\Shader\PlayCameraEyeShader</Filter>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\PlayCameraEyeShader\PlayCameraEyeLastGeometryShader.hlsl">
+      <Filter>CatchAFairy\Shader\PlayCameraEyeShader</Filter>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\PlayCameraEyeShader\PlayCameraEyeLastPixelShader.hlsl">
+      <Filter>CatchAFairy\Shader\PlayCameraEyeShader</Filter>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\PlayCameraEyeShader\PlayCameraEyeLastVertexShader.hlsl">
+      <Filter>CatchAFairy\Shader\PlayCameraEyeShader</Filter>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\DirectionalLightShader\DirectionalLightGeometryShader.hlsl">
+      <Filter>CatchAFairy\Shader\DirectionalLightShader</Filter>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\DirectionalLightShader\DirectionalLightPixelShader.hlsl">
+      <Filter>CatchAFairy\Shader\DirectionalLightShader</Filter>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\DirectionalLightShader\DirectionalLightVertexShader.hlsl">
+      <Filter>CatchAFairy\Shader\DirectionalLightShader</Filter>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\CameraEyeShadowShader\CameraEyeShadowGeometryShader.hlsl">
+      <Filter>CatchAFairy\Shader\CameraEyeShadowShader</Filter>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\CameraEyeShadowShader\CameraEyeShadowPixelShader.hlsl">
+      <Filter>CatchAFairy\Shader\CameraEyeShadowShader</Filter>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\CameraEyeShadowShader\CameraEyeShadowVertexShader.hlsl">
+      <Filter>CatchAFairy\Shader\CameraEyeShadowShader</Filter>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\CameraEyeReflectionLightShader\CameraEyeReflectionLightGeometryShader.hlsl">
+      <Filter>CatchAFairy\Shader\CameraEyeReflectionLightShader</Filter>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\CameraEyeReflectionLightShader\CameraEyeReflectionLightPixelShader.hlsl">
+      <Filter>CatchAFairy\Shader\CameraEyeReflectionLightShader</Filter>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\CameraEyeReflectionLightShader\CameraEyeReflectionLightVertexShader.hlsl">
+      <Filter>CatchAFairy\Shader\CameraEyeReflectionLightShader</Filter>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\CameraEyePointLightShader\CameraEyePointLightGeometryShader.hlsl">
+      <Filter>CatchAFairy\Shader\CameraEyePointLightShader</Filter>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\CameraEyePointLightShader\CameraEyePointLightPixelShader.hlsl">
+      <Filter>CatchAFairy\Shader\CameraEyePointLightShader</Filter>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\CameraEyePointLightShader\CameraEyePointLightVertexShader.hlsl">
+      <Filter>CatchAFairy\Shader\CameraEyePointLightShader</Filter>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\PlayGUIShader\PlayGUIGeometryShader.hlsl">
+      <Filter>CatchAFairy\Shader\PlayGUIShader</Filter>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\PlayGUIShader\PlayGUIPixelShader.hlsl">
+      <Filter>CatchAFairy\Shader\PlayGUIShader</Filter>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\PlayGUIShader\PlayGUIVertexShader.hlsl">
+      <Filter>CatchAFairy\Shader\PlayGUIShader</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CatchAFairy\Shader\OutputScreenShader\OutputScreenShaderData.hlsli">
+      <Filter>CatchAFairy\Shader\OutputScreenShader</Filter>
+    </None>
+    <None Include="CatchAFairy\Shader\LogoShader\LogoShaderData.hlsli">
+      <Filter>CatchAFairy\Shader\LogoShader</Filter>
+    </None>
+    <None Include="CatchAFairy\Shader\TitleOutputShader\TitleOutputShaderData.hlsli">
+      <Filter>CatchAFairy\Shader\TitleOutputShader</Filter>
+    </None>
+    <None Include="CatchAFairy\Shader\PlayCameraEyeShader\PlayCameraEyeFirstShaderData.hlsli">
+      <Filter>CatchAFairy\Shader\PlayCameraEyeShader</Filter>
+    </None>
+    <None Include="CatchAFairy\Shader\PlayCameraEyeShader\PlayCameraEyeLastShaderData.hlsli">
+      <Filter>CatchAFairy\Shader\PlayCameraEyeShader</Filter>
+    </None>
+    <None Include="CatchAFairy\Shader\DirectionalLightShader\DirectionalLightShaderData.hlsli">
+      <Filter>CatchAFairy\Shader\DirectionalLightShader</Filter>
+    </None>
+    <None Include="CatchAFairy\Shader\CameraEyeShadowShader\CameraEyeShadowShaderData.hlsli">
+      <Filter>CatchAFairy\Shader\CameraEyeShadowShader</Filter>
+    </None>
+    <None Include="CatchAFairy\Shader\CameraEyeReflectionLightShader\CameraEyeReflectionLightShaderData.hlsli">
+      <Filter>CatchAFairy\Shader\CameraEyeReflectionLightShader</Filter>
+    </None>
+    <None Include="CatchAFairy\Shader\CameraEyePointLightShader\CameraEyePointLightShaderData.hlsli">
+      <Filter>CatchAFairy\Shader\CameraEyePointLightShader</Filter>
+    </None>
+    <None Include="CatchAFairy\Shader\PlayGUIShader\PlayGUIShaderData.hlsli">
+      <Filter>CatchAFairy\Shader\PlayGUIShader</Filter>
+    </None>
+  </ItemGroup>
+</Project>

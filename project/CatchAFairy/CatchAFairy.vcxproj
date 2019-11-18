@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CCEFA8BC-5A1B-4CC9-A413-F8ACE6145D0A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>CatchAFairy</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ForcedIncludeFiles>$(ProjectDir)\AllUse.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\cri\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)\DirectXTK\Lib\Debug;$(ProjectDir)\cri\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>DirectXTK.lib;DXGI.lib;D3D11.lib;cri_ware_pcx86_le_import.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <FxCompile>
+      <ObjectFileOutput>$(ProjectDir)Resources\Shaders\%(Filename).cso</ObjectFileOutput>
+      <ShaderModel>4.0_level_9_1</ShaderModel>
+    </FxCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ForcedIncludeFiles>$(ProjectDir)\AllUse.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\cri\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)\DirectXTK\Lib;$(ProjectDir)\cri\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>DirectXTK.lib;DXGI.lib;D3D11.lib;cri_ware_pcx86_le_import.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <FxCompile>
+      <ObjectFileOutput>$(ProjectDir)Resources\Shaders\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AllUse.h" />
+    <ClInclude Include="CatchAFairy\Data\EnemyFairyType.h" />
+    <ClInclude Include="CatchAFairy\Data\GUIVerticesSetting.h" />
+    <ClInclude Include="CatchAFairy\Data\PointLightsSetting.h" />
+    <ClInclude Include="CatchAFairy\Data\TreesOffset.h" />
+    <ClInclude Include="CatchAFairy\Game.h" />
+    <ClInclude Include="CatchAFairy\Object\CameraObjectInterface.h" />
+    <ClInclude Include="CatchAFairy\Object\PlayScene\DirectionalLight.h" />
+    <ClInclude Include="CatchAFairy\Object\PlayScene\EnemyFairies.h" />
+    <ClInclude Include="CatchAFairy\Object\PlayScene\EnemyFairyConstance.h" />
+    <ClInclude Include="CatchAFairy\Object\PlayScene\EnemyFairyController.h" />
+    <ClInclude Include="CatchAFairy\Object\PlayScene\Ground.h" />
+    <ClInclude Include="CatchAFairy\Object\PlayScene\GUI\FairyPositionView.h" />
+    <ClInclude Include="CatchAFairy\Object\PlayScene\GUI\GUIManager.h" />
+    <ClInclude Include="CatchAFairy\Object\PlayScene\GUI\GUIObjectInterface.h" />
+    <ClInclude Include="CatchAFairy\Object\PlayScene\GUI\Numbers.h" />
+    <ClInclude Include="CatchAFairy\Object\PlayScene\GUI\OperationMethodView.h" />
+    <ClInclude Include="CatchAFairy\Object\PlayScene\GUI\TimeView.h" />
+    <ClInclude Include="CatchAFairy\Object\PlayScene\ManaLight.h" />
+    <ClInclude Include="CatchAFairy\Object\PlayScene\PlayCamera.h" />
+    <ClInclude Include="CatchAFairy\Object\PlayScene\Player.h" />
+    <ClInclude Include="CatchAFairy\Object\PlayScene\PointLight.h" />
+    <ClInclude Include="CatchAFairy\Object\PlayScene\Trees.h" />
+    <ClInclude Include="CatchAFairy\Object\PointLightObjectInterface.h" />
+    <ClInclude Include="CatchAFairy\Object\RenderObjectInterface.h" />
+    <ClInclude Include="CatchAFairy\Object\RenderSameObjectInterface.h" />
+    <ClInclude Include="CatchAFairy\Object\UpdateObjectInterface.h" />
+    <ClInclude Include="CatchAFairy\Scene\SceneBase.h" />
+    <ClInclude Include="CatchAFairy\Scene\SceneInterface.h" />
+    <ClInclude Include="CatchAFairy\Scene\SceneListEdge.h" />
+    <ClInclude Include="CatchAFairy\Scene\SceneLogo.h" />
+    <ClInclude Include="CatchAFairy\Scene\SceneManager.h" />
+    <ClInclude Include="CatchAFairy\Scene\ScenePlay.h" />
+    <ClInclude Include="CatchAFairy\Scene\SceneResult.h" />
+    <ClInclude Include="CatchAFairy\Scene\SceneTitle.h" />
+    <ClInclude Include="CatchAFairy\Shader\User\CameraEyePointLightShaderUser.h" />
+    <ClInclude Include="CatchAFairy\Shader\User\CameraEyeReflectionLightShaderUser.h" />
+    <ClInclude Include="CatchAFairy\Shader\User\CameraEyeShadowShaderUser.h" />
+    <ClInclude Include="CatchAFairy\Shader\User\DirectionalLightShaderUser.h" />
+    <ClInclude Include="CatchAFairy\Shader\User\LogoShaderUser.h" />
+    <ClInclude Include="CatchAFairy\Shader\User\OutputScreenShaderUser.h" />
+    <ClInclude Include="CatchAFairy\Shader\User\PlayCameraEyeFirstShaderUser.h" />
+    <ClInclude Include="CatchAFairy\Shader\User\PlayCameraEyeLastShaderUser.h" />
+    <ClInclude Include="CatchAFairy\Shader\User\PlayGUIShaderUser.h" />
+    <ClInclude Include="CatchAFairy\Shader\User\ShaderUserBase.h" />
+    <ClInclude Include="CatchAFairy\Shader\User\ShaderVertexTopology.h" />
+    <ClInclude Include="CatchAFairy\Shader\User\TitleOutputShaderUser.h" />
+    <ClInclude Include="Ishikawa\Common\DebugLog.h" />
+    <ClInclude Include="Ishikawa\Common\Exception\ITExceptions.h" />
+    <ClInclude Include="Ishikawa\Common\InterfaceRandom.h" />
+    <ClInclude Include="Ishikawa\Common\PatternBase\SingletonBase.h" />
+    <ClInclude Include="Ishikawa\Common\PatternBase\SingletonManager.h" />
+    <ClInclude Include="Ishikawa\Common\Random.h" />
+    <ClInclude Include="Ishikawa\Common\SafePointer.h" />
+    <ClInclude Include="Ishikawa\Common\SystemFunctions.h" />
+    <ClInclude Include="Ishikawa\Common\Timer.h" />
+    <ClInclude Include="Ishikawa\Common\Xorshift.h" />
+    <ClInclude Include="Ishikawa\CriAdx2Le\ITCriAdx2Le.h" />
+    <ClInclude Include="Ishikawa\DirectX\Device\DependentResource\ITDeviceDependentResourceBase.h" />
+    <ClInclude Include="Ishikawa\DirectX\Device\DependentResource\ITDeviceDependentResourceInterface.h" />
+    <ClInclude Include="Ishikawa\DirectX\Device\DependentResource\ITDeviceDependentResourceListEdge.h" />
+    <ClInclude Include="Ishikawa\DirectX\Device\ITDevice.h" />
+    <ClInclude Include="Ishikawa\DirectX\ITSwapChain.h" />
+    <ClInclude Include="Ishikawa\DirectX\ITViewport.h" />
+    <ClInclude Include="Ishikawa\DirectX\Texture\ITDepthStencilInterface.h" />
+    <ClInclude Include="Ishikawa\DirectX\Texture\ITFileTexture.h" />
+    <ClInclude Include="Ishikawa\DirectX\Texture\ITFileTextureLoader.h" />
+    <ClInclude Include="Ishikawa\DirectX\Texture\ITRenderTargetInterface.h" />
+    <ClInclude Include="Ishikawa\DirectX\Texture\ITShaderResourceInterface.h" />
+    <ClInclude Include="Ishikawa\DirectX\Texture\ITTexture2D.h" />
+    <ClInclude Include="Ishikawa\DirectX\Texture\ITTexture2DInterface.h" />
+    <ClInclude Include="Ishikawa\DirectX\Texture\ITTextureData.h" />
+    <ClInclude Include="Ishikawa\Game\ITGameUseDirectXBase.h" />
+    <ClInclude Include="Ishikawa\Input\ITKeyboard.h" />
+    <ClInclude Include="Ishikawa\Math\ITCollision.h" />
+    <ClInclude Include="Ishikawa\Math\ITCollisionShapes.h" />
+    <ClInclude Include="Ishikawa\Math\ITFloatN.h" />
+    <ClInclude Include="Ishikawa\Math\ITMathFunctions.h" />
+    <ClInclude Include="Ishikawa\Math\ITMatrix.h" />
+    <ClInclude Include="Ishikawa\Model\ITObjectLoader.h" />
+    <ClInclude Include="Ishikawa\Window\DependentResource\ITWindowDependentResourceBase.h" />
+    <ClInclude Include="Ishikawa\Window\DependentResource\ITWindowDependentResourceInterface.h" />
+    <ClInclude Include="Ishikawa\Window\DependentResource\ITWindowDependentResourceListEdge.h" />
+    <ClInclude Include="Ishikawa\Window\ITWindow.h" />
+    <ClInclude Include="Ishikawa\Window\ITWindowClass.h" />
+    <ClInclude Include="Ishikawa\Window\ITWindowInterfase.h" />
+    <ClInclude Include="Ishikawa\Window\ITWindowListEdge.h" />
+    <ClInclude Include="Ishikawa\Window\ITWindowManager.h" />
+    <ClInclude Include="WinMain.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CatchAFairy\Data\TreesOffset.cpp" />
+    <ClCompile Include="CatchAFairy\Game.cpp" />
+    <ClCompile Include="CatchAFairy\Object\PlayScene\DirectionalLight.cpp" />
+    <ClCompile Include="CatchAFairy\Object\PlayScene\EnemyFairies.cpp" />
+    <ClCompile Include="CatchAFairy\Object\PlayScene\EnemyFairyConstance.cpp" />
+    <ClCompile Include="CatchAFairy\Object\PlayScene\EnemyFairyController.cpp" />
+    <ClCompile Include="CatchAFairy\Object\PlayScene\Ground.cpp" />
+    <ClCompile Include="CatchAFairy\Object\PlayScene\GUI\FairyPositionView.cpp" />
+    <ClCompile Include="CatchAFairy\Object\PlayScene\GUI\GUIManager.cpp" />
+    <ClCompile Include="CatchAFairy\Object\PlayScene\GUI\Numbers.cpp" />
+    <ClCompile Include="CatchAFairy\Object\PlayScene\GUI\OperationMethodView.cpp" />
+    <ClCompile Include="CatchAFairy\Object\PlayScene\GUI\TimeView.cpp" />
+    <ClCompile Include="CatchAFairy\Object\PlayScene\ManaLight.cpp" />
+    <ClCompile Include="CatchAFairy\Object\PlayScene\PlayCamera.cpp" />
+    <ClCompile Include="CatchAFairy\Object\PlayScene\Player.cpp" />
+    <ClCompile Include="CatchAFairy\Object\PlayScene\PointLight.cpp" />
+    <ClCompile Include="CatchAFairy\Object\PlayScene\Trees.cpp" />
+    <ClCompile Include="CatchAFairy\Scene\SceneBase.cpp" />
+    <ClCompile Include="CatchAFairy\Scene\SceneListEdge.cpp" />
+    <ClCompile Include="CatchAFairy\Scene\SceneLogo.cpp" />
+    <ClCompile Include="CatchAFairy\Scene\SceneManager.cpp" />
+    <ClCompile Include="CatchAFairy\Scene\ScenePlay.cpp" />
+    <ClCompile Include="CatchAFairy\Scene\SceneResult.cpp" />
+    <ClCompile Include="CatchAFairy\Scene\SceneTitle.cpp" />
+    <ClCompile Include="CatchAFairy\Shader\User\CameraEyePointLightShaderUser.cpp" />
+    <ClCompile Include="CatchAFairy\Shader\User\CameraEyeReflectionLightShaderUser.cpp" />
+    <ClCompile Include="CatchAFairy\Shader\User\CameraEyeShadowShaderUser.cpp" />
+    <ClCompile Include="CatchAFairy\Shader\User\DirectionalLightShaderUser.cpp" />
+    <ClCompile Include="CatchAFairy\Shader\User\LogoShaderUser.cpp" />
+    <ClCompile Include="CatchAFairy\Shader\User\OutputScreenShaderUser.cpp" />
+    <ClCompile Include="CatchAFairy\Shader\User\PlayCameraEyeFirstShaderUser.cpp" />
+    <ClCompile Include="CatchAFairy\Shader\User\PlayCameraEyeLastShaderUser.cpp" />
+    <ClCompile Include="CatchAFairy\Shader\User\PlayGUIShaderUser.cpp" />
+    <ClCompile Include="CatchAFairy\Shader\User\ShaderUserBase.cpp" />
+    <ClCompile Include="CatchAFairy\Shader\User\ShaderVertexTopology.cpp" />
+    <ClCompile Include="CatchAFairy\Shader\User\TitleOutputShaderUser.cpp" />
+    <ClCompile Include="Ishikawa\Common\DebugLog.cpp" />
+    <ClCompile Include="Ishikawa\Common\Exception\ITExceptions.cpp" />
+    <ClCompile Include="Ishikawa\Common\PatternBase\SingletonBase.cpp" />
+    <ClCompile Include="Ishikawa\Common\PatternBase\SingletonManager.cpp" />
+    <ClCompile Include="Ishikawa\Common\Random.cpp" />
+    <ClCompile Include="Ishikawa\Common\SystemFunctions.cpp" />
+    <ClCompile Include="Ishikawa\Common\Timer.cpp" />
+    <ClCompile Include="Ishikawa\Common\Xorshift.cpp" />
+    <ClCompile Include="Ishikawa\CriAdx2Le\ITCriAdx2Le.cpp" />
+    <ClCompile Include="Ishikawa\DirectX\Device\DependentResource\ITDeviceDependentResourceBase.cpp" />
+    <ClCompile Include="Ishikawa\DirectX\Device\DependentResource\ITDeviceDependentResourceListEdge.cpp" />
+    <ClCompile Include="Ishikawa\DirectX\Device\ITDevice.cpp" />
+    <ClCompile Include="Ishikawa\DirectX\ITSwapChain.cpp" />
+    <ClCompile Include="Ishikawa\DirectX\ITViewport.cpp" />
+    <ClCompile Include="Ishikawa\DirectX\Texture\ITFileTexture.cpp" />
+    <ClCompile Include="Ishikawa\DirectX\Texture\ITFileTextureLoader.cpp" />
+    <ClCompile Include="Ishikawa\DirectX\Texture\ITTexture2D.cpp" />
+    <ClCompile Include="Ishikawa\DirectX\Texture\ITTextureData.cpp" />
+    <ClCompile Include="Ishikawa\Game\ITGameUseDirectXBase.cpp" />
+    <ClCompile Include="Ishikawa\Input\ITKeyboard.cpp" />
+    <ClCompile Include="Ishikawa\Math\ITCollision.cpp" />
+    <ClCompile Include="Ishikawa\Math\ITCollisionShapes.cpp" />
+    <ClCompile Include="Ishikawa\Math\ITFloatN.cpp" />
+    <ClCompile Include="Ishikawa\Math\ITMathFunctions.cpp" />
+    <ClCompile Include="Ishikawa\Math\ITMatrix.cpp" />
+    <ClCompile Include="Ishikawa\Model\ITObjectLoader.cpp" />
+    <ClCompile Include="Ishikawa\Window\DependentResource\ITWindowDependentResourceBase.cpp" />
+    <ClCompile Include="Ishikawa\Window\DependentResource\ITWindowDependentResourceListEdge.cpp" />
+    <ClCompile Include="Ishikawa\Window\ITWindow.cpp" />
+    <ClCompile Include="Ishikawa\Window\ITWindowClass.cpp" />
+    <ClCompile Include="Ishikawa\Window\ITWindowListEdge.cpp" />
+    <ClCompile Include="Ishikawa\Window\ITWindowManager.cpp" />
+    <ClCompile Include="WinMain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="CatchAFairy\Shader\CameraEyePointLightShader\CameraEyePointLightGeometryShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\CameraEyePointLightShader\CameraEyePointLightPixelShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\CameraEyePointLightShader\CameraEyePointLightVertexShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\CameraEyeReflectionLightShader\CameraEyeReflectionLightGeometryShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\CameraEyeReflectionLightShader\CameraEyeReflectionLightPixelShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\CameraEyeReflectionLightShader\CameraEyeReflectionLightVertexShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\CameraEyeShadowShader\CameraEyeShadowGeometryShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\CameraEyeShadowShader\CameraEyeShadowPixelShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\CameraEyeShadowShader\CameraEyeShadowVertexShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\DirectionalLightShader\DirectionalLightGeometryShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\DirectionalLightShader\DirectionalLightPixelShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\DirectionalLightShader\DirectionalLightVertexShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\LogoShader\LogoGeometryShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\LogoShader\LogoPixelShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\LogoShader\LogoVertexShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\OutputScreenShader\OutputScreenGeometryShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Geometry</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\OutputScreenShader\OutputScreenPixelShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\OutputScreenShader\OutputScreenVertexShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\PlayCameraEyeShader\PlayCameraEyeFirstGeometryShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\PlayCameraEyeShader\PlayCameraEyeFirstPixelShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\PlayCameraEyeShader\PlayCameraEyeFirstVertexShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\PlayCameraEyeShader\PlayCameraEyeLastGeometryShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\PlayCameraEyeShader\PlayCameraEyeLastPixelShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\PlayCameraEyeShader\PlayCameraEyeLastVertexShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\PlayGUIShader\PlayGUIGeometryShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\PlayGUIShader\PlayGUIPixelShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\PlayGUIShader\PlayGUIVertexShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\TitleOutputShader\TitleOutputGeometryShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\TitleOutputShader\TitleOutputPixelShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="CatchAFairy\Shader\TitleOutputShader\TitleOutputVertexShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CatchAFairy\Shader\CameraEyePointLightShader\CameraEyePointLightShaderData.hlsli" />
+    <None Include="CatchAFairy\Shader\CameraEyeReflectionLightShader\CameraEyeReflectionLightShaderData.hlsli" />
+    <None Include="CatchAFairy\Shader\CameraEyeShadowShader\CameraEyeShadowShaderData.hlsli" />
+    <None Include="CatchAFairy\Shader\DirectionalLightShader\DirectionalLightShaderData.hlsli" />
+    <None Include="CatchAFairy\Shader\LogoShader\LogoShaderData.hlsli" />
+    <None Include="CatchAFairy\Shader\OutputScreenShader\OutputScreenShaderData.hlsli" />
+    <None Include="CatchAFairy\Shader\PlayCameraEyeShader\PlayCameraEyeFirstShaderData.hlsli" />
+    <None Include="CatchAFairy\Shader\PlayCameraEyeShader\PlayCameraEyeLastShaderData.hlsli" />
+    <None Include="CatchAFairy\Shader\PlayGUIShader\PlayGUIShaderData.hlsli" />
+    <None Include="CatchAFairy\Shader\TitleOutputShader\TitleOutputShaderData.hlsli" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
